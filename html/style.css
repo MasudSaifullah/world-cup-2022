@@ -272,3 +272,20 @@ h2 {
     grid-column-gap: 25px;
     grid-row-gap: 25px;
 }
+
+#match-page {
+    text-decoration: none;
+}
+
+#highlight {
+    background-color: red;
+}
+
+#highlight-off {
+    background-color: #ffff;
+    color: black;
+}
+
+.none {
+    text-decoration: none;
+}
