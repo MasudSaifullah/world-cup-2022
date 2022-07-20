@@ -1,0 +1,274 @@
+body {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 700;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* headerstyle */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.banner {
+    background-color: blueviolet;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.banner-text {
+    width: 50%;
+    color: #ffff;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: rgb(233, 13, 35);
+    color: #ffff;
+    padding: 10px 40px 10px 10px;
+    border-radius: 10px;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+/* blogs style */
+.menu {
+    background-color: blueviolet;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+.menu-list {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.matches {
+    color: black;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.group {
+    color: black;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.blogs-link {
+    color: #ffff;
+    background-color: rgb(233, 13, 35);
+
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 700;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.blog .blog-banner img {
+    Width: 400px;
+    Height: 200px;
+}
+
+.transfer {
+    border: 2px solid black;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden-item {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: none;
+
+}
+
+/* footer style */
+
+footer {
+    background-color: blueviolet;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+
+}
+
+.page-info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50px;
+
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    justify-content: space-evenly;
+    margin-top: 20PX;
+    padding-bottom: 20PX;
+}
+
+/* Media Quearies */
+
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .banner-img {
+        width: 50%;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .matches-schedule {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .options {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu {
+        background-color: #ffff;
+
+    }
+
+    .page-info {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+        padding: 20px;
+
+    }
+
+    .hidden-blog {
+        display: none;
+    }
+
+    footer {
+        align-items: center;
+        padding-bottom: 50px;
+
+    }
+
+    .page-info {
+        margin-top: 20px;
+    }
+
+}
+
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:991px) {
+    .menu-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu {
+        background-color: #ffff;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .matches-schedule {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hidden-item {
+        display: block;
+    }
+
+    .hidden-blog {
+        display: none;
+    }
+}
+
+/* styles for Matches schedule*/
+.match-schedule {
+    display: flex;
+}
+
+.matches-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
